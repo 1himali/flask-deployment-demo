@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subjects</title>
+</head>
+<body>
+    <h1>Subjects</h1>
+
+    {% for subject in subjects %}
+        <h2>{{ subject.name }}</h2>
+
+        <p>Subject Code: {{ subject.code }}</p>
+        <p>Credits: {{ subject.credits }}</p>
+
+        <hr>
+    {% endfor %}
+
+    <a href="/">Back to Home</a>
+</body>
+</html>

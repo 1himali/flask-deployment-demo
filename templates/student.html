@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ student.name }}</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+
+    <h2>{{ student.name }}</h2>
+
+    <p><strong>Student ID:</strong> {{ student.id }}</p>
+    <p><strong>Course:</strong> {{ student.course }}</p>
+    <p><strong>Semester:</strong> {{ student.semester }}</p>
+    <p><strong>Email:</strong> {{ student.email }}</p>
+
+    <h2>Subjects</h2>
+
+    <ul>
+        {% for subject in student.subjects %}
+            <li>{{ subject }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/students">Back to Students</a>
+    <br><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
