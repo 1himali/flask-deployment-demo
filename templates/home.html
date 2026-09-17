@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+</head>
+<body>
+    <h1>Student Management System</h1>
+
+    <p>Welcome to the Flask Student Management Application.</p>
+
+    <h2>Application Details</h2>
+    <p>Total Students: {{ students|length }}</p>
+    <p>Total Subjects: {{ subjects|length }}</p>
+
+    <h2>Navigation</h2>
+
+    <a href="/students">View Students</a>
+    <br><br>
+
+    <a href="/subjects">View Subjects</a>
+    <br><br>
+
+    <a href="/about">About</a>
+</body>
+</html>
